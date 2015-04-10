@@ -28,7 +28,7 @@
 	mtext(expression(N[2]) , 2 , line = 2.5 , las = 1)
 	flowField(mut.pop.dyn , x.lim = x.lim , y.lim = y.lim , parameters = parms , points = 15 , arrow.type = "proportional")
 	abline(v = 0 , h = 0 , lwd = 2)
-	nullclines(mut.pop.dyn , x.lim = x.lim , y.lim = y.lim , parameters = parms , points = 250 , lwd = 1.5)
+	nc <- nullclines(mut.pop.dyn , x.lim = x.lim , y.lim = y.lim , parameters = parms , points = 250 , lwd = 1.5)
 	}
 
 ### plot ###
@@ -36,8 +36,8 @@
 	phasePlot(mut.pop.dyn , parameters)
 
 ### add trajectory ###
-	points <- 5
+	points <- 8
 	x <- c(runif(points , 0 , 40))
 	y <- c(runif(points , 0 , 40))
 	traj.pts <- matrix(c(x,y) , ncol = 2)
-	trajectory(mut.pop.dyn , y0 = traj.pts , t.end = 100 , parameters = parms)
+	traj <- trajectory(mut.pop.dyn , y0 = traj.pts , t.end = 100 , parameters = parms)
