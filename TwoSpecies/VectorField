@@ -36,7 +36,8 @@
 	phasePlot(mut.pop.dyn , parameters)
 
 ### add trajectory ###
-	x <- c(40 , 0.1)
-	y <- c(0.1 , 40)
+	points <- 5
+	x <- c(runif(points , 0 , 40))
+	y <- c(runif(points , 0 , 40))
 	traj.pts <- matrix(c(x,y) , ncol = 2)
 	trajectory(mut.pop.dyn , y0 = traj.pts , t.end = 100 , parameters = parms)
