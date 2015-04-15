@@ -8,7 +8,7 @@
 #  iii. a population with mutualism againt the   #
 #       logistic equation                        #
 #  iv.  populations 1 and 2 with different       #
-        mutualistic effects                      #
+#       mutualistic effects                      #
 #  v. populations 1 and 2 with different values  #
 #     of K                                       #
 #  vi. a population where the mutualistic effect #
